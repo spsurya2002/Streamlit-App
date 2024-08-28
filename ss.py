@@ -1,20 +1,7 @@
 import streamlit as st
-from groq import Groq
 from PIL import Image, ImageGrab
-import google.generativeai as genai
-import cv2
-import pyperclip
-import speech_recognition as sr
-from faster_whisper import WhisperModel
-import pyaudio
-import re
-import os
-import time
-import wave
-from dotenv import load_dotenv
-from threading import Thread, Event
 import mss  # New import for cross-platform screenshots
-import pygame
+
 
 def take_screenshot():
     with mss.mss() as sct:
